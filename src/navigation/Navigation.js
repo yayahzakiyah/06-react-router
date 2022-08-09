@@ -1,12 +1,10 @@
 import { Link, Outlet } from "react-router-dom";
+import { useAuth } from "../shared/UseAuth";
 
 const Navigation = () => {
+    const {onLogout} = useAuth();
+
     return(
-        // <div>
-        //     Navigation
-        // </div>
-
-
         <div style={{display: 'flex', flexDirection: 'row'}}>
             <div style={{
                 width: '30%',
@@ -19,6 +17,7 @@ const Navigation = () => {
                     <h2 className="title">Navigation</h2>
                     <Link to='page1'>Page 1</Link>
                     <Link to='page2'>Page 2</Link>
+                    <button onClick={onLogout}>Logout</button>
             </div>
             <div style={{padding: '8px'}}>
                  <Outlet/>

@@ -20,7 +20,7 @@ export const Page2 = () => {
                 {productList.map((product) => {
                     return <Link className='item' 
                                 key={product.id}
-                                to={`/page2/${product.id}`}
+                                to={`${product.id}`}
                                 state={{product:product}}>
                                 {product.productName}</Link>
                 })}
