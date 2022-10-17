@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import ChildPage11 from "../features/page1/ChildPage11";
 import ChildPage12 from "../features/page1/ChildPage12";
-import Page1 from "../features/page1/Page1";
-import Page2 from "../features/Page2";
-import Navigation from "./Navigation";
+import { Page1 } from "../features/page1/Page1";
+import { Page2 } from "../features/page2/Page2";
+import { Navigation } from "./Navigation";
 import { NoMatch } from "./NoMatch";
 
 const AppRouter = () => {
